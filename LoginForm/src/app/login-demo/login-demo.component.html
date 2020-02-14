@@ -1,0 +1,21 @@
+<table>
+    <tr>
+        <td>Username:<input type="text"[(ngModel)]="obj.uname"></td>
+    </tr>
+    <tr>
+        <td>Password:<input type="text"[(ngModel)]="obj.pwd"></td>
+    </tr>
+    <tr>
+            
+        <td colspan="2">
+            <button (click)="Login(obj.uname,obj.pwd)">Login</button>
+        </td>
+    </tr>
+    <tr>
+            
+        <td >
+            <h1>{{val}}</h1>
+        </td>
+    </tr>
+
+</table>

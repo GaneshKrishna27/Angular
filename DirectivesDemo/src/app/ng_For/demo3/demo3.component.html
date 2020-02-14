@@ -1,0 +1,51 @@
+<h1>Employee details</h1>
+<div id="employee">
+    <table>
+        <tr>
+            <td>Projectid:</td>
+            <td><input type="text" [(ngModel)]="pid"></td>
+        </tr>
+        <tr>
+            <td>ProjectName:</td>
+            <td><input type="text" [(ngModel)]="pname"></td>
+        </tr>
+        <tr>
+            <td>Domain:</td>
+            <td><select [(ngModel)]="domain">
+                <option *ngFor="let item of domains">{{domains}}</option>
+                
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>StartDate:</td>
+            <td><input type="Date" [(ngModel)]="startdate"></td>
+        </tr>
+        <tr>
+            <td>EndDate:</td>
+            <td><input type="Date" [(ngModel)]="enddate"></td>
+        </tr>
+        <tr colspan='2'>
+            <button (click)=Create()>Submit</button>
+            
+        </tr>
+    </table>
+    
+    </div>
+
+
+
+<table border="10">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th >Class</th>
+        <th>Age</th>
+    </tr>
+    <tr *ngFor="let item of list">
+        <td>{{item.sid}}</td>
+        <td>{{item.sname}}</td>
+        <td >{{item.std}}</td>
+        <td >{{item.age}}</td>
+    </tr>
+</table>

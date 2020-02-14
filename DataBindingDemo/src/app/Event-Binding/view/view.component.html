@@ -1,0 +1,28 @@
+<h1>Hello {{name}}</h1>
+<button (click)='setName()'>click me</button>
+<div>
+    <input type="text" #t1>
+    <button (click)="greet(t1.value)">greet</button>
+</div>
+
+<div>
+<select (change)="greet(s1.value)"#s1>
+    <option value="ganesh">ganesh</option>
+    <option value="krishna">krishna</option>
+    <option value="sai">sai</option>
+    <option value="bhai">bhai</option>
+</select>
+
+</div>
+
+<div>
+    <input type="text" #a>
+    <input type="text" #b>
+    <button (click)="sum(a.value,b.value)">sum</button>
+    <button (click)="sub(a.value,b.value)">sub</button>
+    <h3>sum:{{c}}</h3>
+
+</div>
+
+
+

@@ -1,0 +1,11 @@
+<h1>welcome</h1> <h2>ganesh</h2>
+<h1>{{'the title is' +title}}</h1>
+<h3>{{title?title:'no title'}}</h3>
+<img src="{{imagepath}}">
+<img [src]="imagepath">
+<h3>{{getname()}}</h3>
+<button [disabled]='isdisabled'>click</button>
+<button  bind-disabled='isdisabled'>bindme</button>
+<my-employee></my-employee>
+<button [class]="mystyle">Submit</button>
+<button [class.italicclass]="applystyle">checkstyle</button>
