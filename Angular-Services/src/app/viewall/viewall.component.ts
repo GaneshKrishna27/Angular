@@ -37,6 +37,7 @@ item:Item;
   onSubmit() {
       this.submitted = true;
       this.Add();
+      // this.Search();
   }
 
   onReset() {
@@ -50,10 +51,12 @@ item:Item;
       {
           this.item=res;
           console.log(this.item);
-          this.item.itemid=this.itemForm.value["itemid"];
-          this.item.name=this.itemForm.value["name"];
-          this.item.price=Number(this.itemForm.value["price"]);
-          this.item.stock=Number(this.itemForm.value["stock"]);
+         this.itemForm.setValue({
+           itemid:this.item.itemid,
+           name:this.item.name,
+           price:this.item.price,
+           stock:this.item.stock
+         })
       })
   }
   Add()
